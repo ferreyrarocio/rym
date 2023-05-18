@@ -1,0 +1,11 @@
+.nav{
+    background-color: rgb(179, 209, 83);
+    width: 100%;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 1em;;
+}
+.logo{
+    width: 20%;
+    background-color: transparent;
+}

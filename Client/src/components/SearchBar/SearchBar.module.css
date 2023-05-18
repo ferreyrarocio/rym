@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    position: sticky;
+    top: 0; 
+    background-color: #3dab62  ;
+    padding: 3px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
