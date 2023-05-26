@@ -29,16 +29,15 @@ return (
 
     <img className={style.logo}src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/2560px-Rick_and_Morty.svg.png"></img>
      <hr/>
-      <label htmlFor="username">Username:</label>
+      <label htmlFor="email">Email:</label>
       <input
         onChange={handleChange}
-        value={userData.username}
+        value={userData.email}
         type="text"
-        name="username"
+        name="email"
       />
-      <p>{errors.username}</p>
-    </div>
-    <div>
+      <p>{errors.email}</p>
+    
       <label htmlFor="password">Password:</label>
       <input
         onChange={handleChange}
@@ -47,8 +46,11 @@ return (
         name="password"
       />
       <p>{errors.p}</p>
+    
+      <button onClick={handleSubmit} 
+       type="submit">LOGIN</button>
+       
     </div>
-    <button type="submit">LOGIN</button>
   </form>
 );
 

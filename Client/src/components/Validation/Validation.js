@@ -1,19 +1,19 @@
 export default (userData) => {
     let errors= {}
-//username
+//email
 
- if (!userData.username){
-    errors.username= "State your email, traveler. It is required"};
+ if (!userData.email){
+    errors.email= "State your email, traveler. It is required"};
     
-  if (!/^[A-Z0-9.%+-]+@[A-Z0-9.]+\.[A-Z]{2,4}$/i.test(userData.username)) {
-    errors.username= "Your invalid email is unacceptable"};
+  if (!/^[A-Z0-9.%+-]+@[A-Z0-9.]+\.[A-Z]{2,4}$/i.test(userData.email)) {
+    errors.email= "Your invalid email is unacceptable"};
 
-  if (userData.username.length > 35) {
-    errors.username= "Attention, spacefarer! Your email cannot surpass the 35 character limit"};
+  if (userData.email.length > 35) {
+    errors.email= "Attention, spacefarer! Your email cannot surpass the 35 character limit"};
         
 //password
     
- if (!/.\d+./.test(userData.password)) {
+ if (!/.*\d+.*/.test(userData.password)) {
     errors.p = "To ensure security, your password must contain at least one number"};
     
   if (!userData.password) {
